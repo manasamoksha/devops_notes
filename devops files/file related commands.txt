@@ -1,0 +1,47 @@
+touch – Create a new empty file
+
+touch file.txt
+
+cat – View file content
+
+cat file.txt
+
+cp – Copy file
+
+cp file1.txt file2.txt
+
+mv – Rename or move file
+
+mv oldname.txt newname.txt
+
+rm – Remove file
+
+rm file.txt
+
+
+wc – Count lines, words, characters in a file
+
+wc file.txt
+wc -l file.txt    # Lines only
+
+diff – Compare content of two files
+
+diff file1.txt file2.txt
+
+cmp – Byte-by-byte comparison
+
+cmp file1.txt file2.txt
+
+ln file.txt hardlink.txt       # Hard link
+ln -s file.txt symlink.txt     # Symbolic link
+
+more / less – View file with pagination
+
+more file.txt
+less file.txt
+
+head / tail – View top/bottom of a file
+
+head -n 10 file.txt      # First 10 lines
+tail -n 10 file.txt      # Last 10 lines
+tail -f log.txt          # Real-time log view

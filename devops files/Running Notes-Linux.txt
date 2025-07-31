@@ -1,0 +1,115 @@
+File Commands
+=============================
+
+touch file.txt
+
+cat – View file content
+
+cat file.txt
+
+cp – Copy file
+
+cp file1.txt file2.txt
+
+
+mv – Rename or move file
+
+mv oldname.txt newname.txt
+
+rm – Remove file
+
+rm file.txt
+
+remove all files
+
+rm -rf *
+
+wc – Count lines, words, characters in a file
+
+wc file.txt
+
+wc -l file.txt    # Lines only
+wc -c no of characters
+wc -w no of words
+
+
+diff – Compare content of two files
+
+diff file1.txt file2.txt
+
+cmp – Byte-by-byte comparison
+
+cmp file1.txt file2.txt
+
+ln file.txt hardlink.txt       # Hard link
+ln -s file.txt symlink.txt     # Symbolic link
+
+more / less – View file with pagination
+
+more file.txt
+less file.txt
+
+head / tail – View top/bottom of a file
+
+head -n 10 file.txt      # First 10 lines
+tail -n 10 file.txt      # Last 10 lines
+tail -f log.txt          # Real-time log view
+
+
+Directory Navigation & Viewing
+Command	Description
+======================================
+pwd	Print the current working directory
+
+ls	List contents of a directory
+
+ls -l	Long listing (permissions, ownership, size, modified time)
+
+ls -a	Show hidden files (starting with .)
+
+cd folder_name/	Change to a specific directory
+
+cd ..	Move up one level
+
+cd /	Go to root directory
+
+cd ~ or just cd	Go to home directory
+
+tree	Display directory structure in a tree format (may require installation)
+
+ Create, Rename, Move, Delete Folders
+=====================================
+Command	Description
+
+mkdir folder_name	Create a new directory
+
+mkdir -p dir1/dir2/dir3	Create nested directories
+
+mv old_folder new_folder	Rename or move a directory
+
+cp -r source_dir target_dir	Copy a directory recursively
+
+rm -r folder_name	Delete a directory recursively
+
+rmdir folder_name	Remove an empty directory
+
+ Permissions & Ownership
+=====================================================
+Command	Description
+
+chmod 755 folder_name	Set permissions (read/write/execute)
+
+chown user:group folder_name	Change ownership of a directory
+
+ls -ld folder_name	View permissions on a directory
+===================================================
+ Searching & Finding
+
+Command	Description
+
+find . -type d -name "name"	Find a directory with a specific name
+
+du -sh folder_name/	Show size of a directory
+
+df -h	Show disk usage of mounted filesystems
+
